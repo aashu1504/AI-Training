@@ -1,0 +1,65 @@
+{
+    "API Response": {
+        "api": [
+            {
+                "courseTitle": "Rest Ass With Java",
+                "price": "500"
+            },
+            {
+                "courseTitle": "Rest Ass With C#",
+                "price": "800"
+            }
+        ],
+        "mobile": [
+            {
+                "courseTitle": "Mobile Automation With Java",
+                "price": "520"
+            }
+        ]
+    },
+    "API Schema": {
+        "type": "object",
+        "properties": {
+            "api": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "courseTitle": {
+                            "type": "string"
+                        },
+                        "price": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "courseTitle",
+                        "price"
+                    ]
+                }
+            },
+            "mobile": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "courseTitle": {
+                            "type": "string"
+                        },
+                        "price": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "courseTitle",
+                        "price"
+                    ]
+                }
+            }
+        },
+        "required": [
+            "api",
+            "mobile"
+        ]
+    }
+}
